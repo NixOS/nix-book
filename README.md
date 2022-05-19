@@ -211,3 +211,14 @@ Results should help direct further work, and help answer questions such as:
 
 As a consequence we should observe influx of new regular users and contributors to `nixpkgs` and, eventually, Nix. We currently cannot measure this. Unfortunately we do not gather community metrics, and this is out of this project's scope.
 
+# License and Support
+
+[![License: CC BY-SA 4.0][cc-by-sa-button]][cc-by-sa]
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0][cc-by-sa] International License.
+
+This project is sponsored by [Tweag][tweag].
+
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-button]: https://licensebuttons.net/l/by-sa/4.0/80x15.png
+[tweag]: https://www.tweag.io
+
