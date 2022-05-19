@@ -35,9 +35,9 @@ Nix becomes harder to learn every day.
 
 # Project proposal
 
-The high-level goal of this project proposal is to increase community growth by improving the onboarding documentation.
+The high-level goal of this project proposal is to increase community growth by improving the onboarding experience.
 
-### A vision for the journey into Nix, `nixpkgs`, and NixOS
+## A vision for the journey into Nix, `nixpkgs`, and NixOS
 
 ```mermaid
 flowchart
@@ -87,7 +87,7 @@ flowchart
 			install-profile[install]
 			update
 			rollback
-			pinninge
+			pinning
 			gc[garbage collection]
 		end
 		subgraph declarative-pkgs[declarative package management]
