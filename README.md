@@ -1,21 +1,17 @@
 # The Nix Book
 
-## tl;dr
+This community online learning resource — not a book in the conventional sense — is under development.
 
-### Goals
+It shall offer a centralized autodidactic onboarding path into Nix and its surrounding ecosystem.
 
-- Improve the autodidactic Nix onboarding experience to increase community growth
-- Provide a clear learning path from first impression down to source code
+By explaing how each component works, how to make best use of it, and how to continue from there, it is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
 
-### Tasks
+[nixos-org]: https://nixos.org
+[nix-manual]: https://nixos.org/manual/nix/stable/
+[nixpkgs-manual]: https://nixos.org/manual/nixpkgs/stable/
+[nixos-manual]: https://nixos.org/manual/nixos/stable/
 
-- Write a book *actually explaining* Nix and its surrounding ecosystem at a high level of abstraction
-- Overhaul the Nix manual to make it a focused technical reference
-- Integrate new material into the Nix(OS) homepage
-
-# Problem Statement
-
-## Nix is hard to get into
+# Motivation
 
 Nix has a proverbially steep learning curve.
 
@@ -389,7 +385,7 @@ The results of sorting through and reorganizing material for the book can be mad
     - through the lens of [Backward design](https://en.wikipedia.org/wiki/Backward_design)
         - what are learning objectives and which material achieves which?
 - add brief summaries to better orient readers
-- rework navigation of learning on [nixos.org](http://nixos.org) to incorporate the new structure
+- rework navigation of learning on [nixos.org][nixos-org] to incorporate the new structure
     - lead readers and contributors to the right places for their types of questions
 
 ## How is success defined and measured?
