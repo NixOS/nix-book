@@ -150,4 +150,8 @@ The rule is unambiguous and does not require tooling support to be applied easil
 
 [Here is a discussion of different line wrapping styles.][markdown-wrapping-styles]
 
+Use [reference links][reference-link] to keep the plain text readable.
+Collect links at the end of each section, which are delimited by headings.
+
 [markdown-wrapping-styles]: https://web.archive.org/web/20220519121408/https://mtsknn.fi/blog/4-1-wrapping-styles-for-markdown-prose-and-code-comments/
+[reference-link]: https://github.github.com/gfm/#reference-link
