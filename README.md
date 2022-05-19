@@ -155,7 +155,7 @@ The Nix Book is supposed to be the living, up-to-date overview on all concepts s
 
 The main target audience are autodidacts who do not have access to hand-holding or personal training, nor possibility for learning through osmosis. It shall contain explanations of technical principles, design rationale, and architecture of all major components in the Nix ecosystem as it is today.
 
-It can mostly be based on available information; reoganized, reworded, or complemented where necessary. See the [proposed outline](src/README.md) and compare to [current state of documentation](resources.md) for an impression where material can be repurposed. It should be extended with diagrams and illustrations where it would add clarity.
+It can mostly be based on available information; reoganized, reworded, or complemented where necessary. See the [proposed outline](contents/README.md) and compare to [current state of documentation](resources.md) for an impression where material can be repurposed. It should be extended with diagrams and illustrations where it would add clarity.
 
 Hypertext allows multiple reading orders through a collection self-contained, but related units. With the right design we can offer multiple coherent access paths into conceptual knowledge; for example breadth-first, depth-first, or free link-surfing.
 

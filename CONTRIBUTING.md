@@ -110,7 +110,7 @@ Use this leverage with care.
 ├── CONTRIBUTING.md | this file
 ├── LICENSE.md      | license information
 ├── resources.md    | categorized collection of existing learning resources
-└── src             | book contents
+└── contents        | book contents
 ```
 
 ### Licensing and attribution
