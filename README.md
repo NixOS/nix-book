@@ -6,6 +6,8 @@ It shall offer a centralized autodidactic onboarding path into Nix and its surro
 
 By explaing how each component works, how to make best use of it, and how to continue from there, it is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
 
+Please consider [contributing to this book](CONTRIBUTING.md), especially if you are currently learning Nix, have experience teaching Nix, or are a domain expert using Nix to solve specific problems.
+
 [nixos-org]: https://nixos.org
 [nix-manual]: https://nixos.org/manual/nix/stable/
 [nixpkgs-manual]: https://nixos.org/manual/nixpkgs/stable/
