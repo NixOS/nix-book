@@ -87,7 +87,9 @@ flowchart
   end
 	first-steps --> book --> manuals --> source
 	subgraph book[The Nix Book]
-		build --> imperative-pkgs --> declarative-pkgs --> nixpkgs-learn --> dev & declarative-config
+		direction TB
+		build --> imperative-pkgs & declarative-pkgs
+		declarative-pkgs --> declarative-config & dev & nixpkgs-learn
 		subgraph build[run software]
 			direction LR
 			find-pkg[find packages]
@@ -99,14 +101,15 @@ flowchart
 			install-profile[install]
 			update
 			rollback
-			pinning
-			gc[garbage collection]
+			pin-packages[pin packages]
 		end
 		subgraph declarative-pkgs[declarative package management]
 			direction LR
 			decl-env[reproducible environment]
 			compose[compose packages]
 			adapt[adapt packages]
+			pin-deps[pin dependencies]
+			gc[garbage collection]
 		end
 		subgraph nixpkgs-learn[Nix package collection]
 			direction LR
@@ -120,8 +123,9 @@ flowchart
 			os[operating system distribution]
 			services[service management]
 		end
-		subgraph dev[software development with Nix]
+		subgraph dev[software development]
 			direction LR
+			lang-ecosystems[language ecosystems]
 			ci[continuous integration]
 			distributed[distributed builds]
 			caching
