@@ -4,35 +4,9 @@ This community online learning resource — not a book in the conventional sense
 
 It shall offer a centralized autodidactic onboarding path into Nix and its surrounding ecosystem.
 
-## Structure
-
-The book is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
-
-It is oriented around use cases:
-
-- What can you do with Nix?
-	- How easy is it?
-		- Some things are trivial and fun.
-		- Some things require disciplined learning to get productive.
-		- Some things do not work properly, have confusing interfaces, or inadequate documentation.
-
-	- How to do it?
-
-	  Depending on how well a use case is supported, we can provide
-		- instructions and examples
-		- links to known-good external resources, with summaries
-		- overview of available tools, and their state of maturity and maintenance
-		- overview of ideas, and state of community discussion.
-
-	- How to continue from here?
-
-	  Depending on how well a use case is explored, we can link to
-		- other chapters
-		- reference manuals
-		- external projects
-		- ongoing community discussion.
-
 ## A vision for the journey into Nix, `nixpkgs`, and NixOS
+
+This book is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
 
 ```mermaid
 flowchart

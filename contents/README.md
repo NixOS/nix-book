@@ -1,12 +1,45 @@
 # Outline
 
-The book shall be organized top-down from defining a problem domain, the solution approach Nix takes, following explanations how solutions for each specific problems are designed. Each section shall have working examples how to use the presented solution and links to relevant reference manuals.
+## How to read this book
 
-Each section should have an interactive questionnaire to (at least shallowly) determine learning success and collect feedback.
+Each section has the following structure:
 
-Sections are ordered from generic to specific. Sections depend on insights from previous chapters, and these dependencies should be made clear, already in the process of developing the book, to further inform a suitable structure or reading order.
+- What will you learn? (problem statement and learning goals)
+- What do you need? (prerequisites)
+  - Previous chapters
+  - Domain-specific skills or knowledge
+- How easy is it? (level of difficulcy)
+  - Some things are trivial and fun.
+  - Some things require disciplined learning to get productive.
+  - Some things do not work properly, have confusing interfaces, or inadequate documentation.
 
-Software developers building their own projects may take a different path than end-users who just want to use packaged software temporarily or persistently.
+- How to do it? (instructions)
+
+  Depending on how well a use case is supported, we can provide
+  - instructions and examples
+  - links to known-good external resources, with summaries
+  - overview of available tools, and their state of maturity and maintenance
+  - overview of ideas, and state of community discussion.
+
+- What did you learn? (assessment)
+
+  To further improve the book, the tools and their documentation, we assess your learning success.
+  You can also ask questions, and leave feedback or suggestions.
+
+- (optional) How does it work? (explanation)
+
+  For the curious: a brief explanation of the mechanism behind the solution Nix offers.
+
+- How to continue from here? (next steps)
+
+  Depending on how well a use case is explored, you can proceed to
+  - other chapters
+  - reference manuals
+  - external projects
+  - ongoing community discussion.
+
+Chapters and sections are ordered by increasing level of difficulcy.
+
 
 ## Which problems Nix solves
 
