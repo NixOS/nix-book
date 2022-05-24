@@ -85,10 +85,10 @@ flowchart
 		subgraph dev[software development]
 			direction LR
 			lang-ecosystems[language ecosystems]
-			ci[continuous integration]
-			distributed[distributed builds]
 			caching
 			deployment
+			ci[continuous integration]
+			distributed[distributed builds]
 			cross-compilation
 			bundling[bundling build results]
 		end
