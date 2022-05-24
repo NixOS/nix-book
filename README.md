@@ -4,50 +4,33 @@ This community online learning resource — not a book in the conventional sense
 
 It shall offer a centralized autodidactic onboarding path into Nix and its surrounding ecosystem.
 
-By explaing how each component works, how to make best use of it, and how to continue from there, it is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
+## Structure
 
-Please consider [contributing to this book](CONTRIBUTING.md), especially if you are currently learning Nix, have experience teaching Nix, or are a domain expert using Nix to solve specific problems.
+The book is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
 
-[nixos-org]: https://nixos.org
-[nix-manual]: https://nixos.org/manual/nix/stable/
-[nixpkgs-manual]: https://nixos.org/manual/nixpkgs/stable/
-[nixos-manual]: https://nixos.org/manual/nixos/stable/
+It is oriented around use cases:
 
-# Motivation
+- What can you do with Nix?
+	- How easy is it?
+		- Some things are trivial and fun.
+		- Some things require disciplined learning to get productive.
+		- Some things do not work properly, have confusing interfaces, or inadequate documentation.
 
-Nix has a proverbially steep learning curve.
+	- How to do it?
 
-> ![](https://discourse.nixos.org/uploads/default/original/2X/f/fef4e7f73fbca41179060500174f1448d16fb8c9.jpeg)
->
-> [Posted by nixinator](https://discourse.nixos.org/t/probably-the-best-lecture-of-nix-fundamentals-on-the-internet/9893) on NixOS Discourse
+	  Depending on how well a use case is supported, we can provide
+		- instructions and examples
+		- links to known-good external resources, with summaries
+		- overview of available tools, and their state of maturity and maintenance
+		- overview of ideas, and state of community discussion.
 
-The [Nix](https://nixos.org/manual/nix/stable/)[([pkgs](https://nixos.org/manual/nixpkgs/stable)|[OS](https://nixos.org/manual/nixos/stable/))] manuals, together with the [RFCs](https://github.com/NixOS/rfcs), Eelco Dolstra’s PhD thesis [The Purely Functional Software Deployment Model](https://edolstra.github.io/pubs/phd-thesis.pdf), [NixOS Wiki](https://nixos.wiki/wiki/) and [nix.dev](https://nix.dev), are the most comprehensive collection of knowledge on the design of the Nix ecosystem – except for the code base itself.
-But these resources are dispersed, in varying state of maintenance, do not follow a coherent structure to draw an overarching narrative, and, based on rich anecdata, community folklore, and the [2022 Nix survey](https://discourse.nixos.org/t/2022-nix-survey-results/18983), overall are not very effective for onbarding:
+	- How to continue from here?
 
-> ### Documentation, Documentation, Documentation
->
-> Documentation (once again) came up universally across almost all respondents.
-  Key asks in this area revolved around three aspects - onboarding, unblocking and centralization.
->
-> - Onboarding - A majority of respondents highlighted trouble in the onboarding phase.
-    The lack of new user documentation meant users have a tough time understanding how to onboard, following the first few steps, understanding best practices and finding general FAQs.
-> - Unblocking - Respondents heavily emphasized the need for better documentation in the realm of tutorials/guides/examples that can help serve in unblocking themselves.
-> - Centralization - Many were frustrated with the time it took to locate relevant documentation.
-    Searching for answers took too long and invariably led them to various websites, github repos, and videos - often requiring multiple resources to address the same issue.
-
-There also seems to exist no birds-eye view on the larger ecosystem and the interplay of its components.
-
-> ![](https://discourse.nixos.org/uploads/default/original/2X/b/b0c3368ce1a5b94b061184f98a8db49bfd209c51.png)
->
-> Own contribution; does not cover topics such as deployment or support tooling.
-
-Meanwhile, complexity is ever growing with new features, and disparity between what is actually explained and what people use in the field continuously increases.
-
-Nix becomes harder to learn every day.
-
-# Project proposal
-
-The high-level goal of this project proposal is to increase community growth by improving the onboarding experience.
+	  Depending on how well a use case is explored, we can link to
+		- other chapters
+		- reference manuals
+		- external projects
+		- ongoing community discussion.
 
 ## A vision for the journey into Nix, `nixpkgs`, and NixOS
 
@@ -87,6 +70,7 @@ flowchart
 	  end
   end
 	first-steps --> book --> manuals --> source
+	book --> discussion
 	subgraph book[The Nix Book]
 		direction TB
 		build --> imperative-pkgs & declarative-pkgs
@@ -135,6 +119,12 @@ flowchart
 			bundling[bundling build results]
 		end
 	end
+	subgraph discussion
+		RFCs
+		pr[pull requests]
+		issues
+		Discourse
+	end
 	subgraph manuals
 		subgraph man-nix[Nix]
 			cmd[command line interface]
@@ -151,6 +141,52 @@ flowchart
 	end
 
 ```
+## Contributing
+
+Please consider [contributing to this book](CONTRIBUTING.md), especially if
+
+- you are currently learning to use Nix
+- you have experience teaching Nix
+- you are a domain expert using Nix to solve specific problems.
+
+[nixos-org]: https://nixos.org
+[nix-manual]: https://nixos.org/manual/nix/stable/
+[nixpkgs-manual]: https://nixos.org/manual/nixpkgs/stable/
+[nixos-manual]: https://nixos.org/manual/nixos/stable/
+
+# Motivation
+
+Nix has a proverbially steep learning curve.
+
+> ![](https://discourse.nixos.org/uploads/default/original/2X/f/fef4e7f73fbca41179060500174f1448d16fb8c9.jpeg)
+>
+> [Posted by nixinator](https://discourse.nixos.org/t/probably-the-best-lecture-of-nix-fundamentals-on-the-internet/9893) on NixOS Discourse
+
+The [Nix](https://nixos.org/manual/nix/stable/)[([pkgs](https://nixos.org/manual/nixpkgs/stable)|[OS](https://nixos.org/manual/nixos/stable/))] manuals, together with the [RFCs](https://github.com/NixOS/rfcs), Eelco Dolstra’s PhD thesis [The Purely Functional Software Deployment Model](https://edolstra.github.io/pubs/phd-thesis.pdf), [NixOS Wiki](https://nixos.wiki/wiki/) and [nix.dev](https://nix.dev), are the most comprehensive collection of knowledge on the design of the Nix ecosystem – except for the code base itself.
+But these resources are dispersed, in varying state of maintenance, do not follow a coherent structure to draw an overarching narrative, and, based on rich anecdata, community folklore, and the [2022 Nix survey](https://discourse.nixos.org/t/2022-nix-survey-results/18983), overall are not very effective for onbarding:
+
+> ### Documentation, Documentation, Documentation
+>
+> Documentation (once again) came up universally across almost all respondents.
+  Key asks in this area revolved around three aspects - onboarding, unblocking and centralization.
+>
+> - Onboarding - A majority of respondents highlighted trouble in the onboarding phase.
+    The lack of new user documentation meant users have a tough time understanding how to onboard, following the first few steps, understanding best practices and finding general FAQs.
+> - Unblocking - Respondents heavily emphasized the need for better documentation in the realm of tutorials/guides/examples that can help serve in unblocking themselves.
+> - Centralization - Many were frustrated with the time it took to locate relevant documentation.
+    Searching for answers took too long and invariably led them to various websites, github repos, and videos - often requiring multiple resources to address the same issue.
+
+There also seems to exist no birds-eye view on the larger ecosystem and the interplay of its components.
+
+> ![](https://discourse.nixos.org/uploads/default/original/2X/b/b0c3368ce1a5b94b061184f98a8db49bfd209c51.png)
+>
+> Own contribution; does not cover topics such as deployment or support tooling.
+
+Meanwhile, complexity is ever growing with new features, and disparity between what is actually explained and what people use in the field continuously increases.
+
+Nix becomes harder to learn every day.
+
+# Project proposal
 
 The goal of the following proposal is to make Nix the package manager as well as its sourrounding tools more accessible to Nix beginners, and enabling expert users to become effective contributors or maintainers.
 
@@ -216,7 +252,7 @@ Results should help direct further work, and help answer questions such as:
 - How should we reorganize existing material?
 - How should we improve existing material?
 
-As a consequence we should observe influx of new regular users and contributors to `nixpkgs` and, eventually, Nix. We currently cannot measure this. Unfortunately we do not gather community metrics, and this is out of this project's scope.
+As a consequence we should observe influx of new regular users and contributors to `nixpkgs`, NixOS, and eventually Nix proper. We currently cannot measure this. Unfortunately we do not gather community metrics, and this is out of this project's scope.
 
 # License and Support
 
