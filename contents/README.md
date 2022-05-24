@@ -88,8 +88,17 @@ This section shows how to have all of that by declaring a Nix expression in a fi
 - compose packages
 - adapt packages to your needs
 
-This chapter should have at least a reference to or a full-blown copy of a good introduction to the Nix langauge as a prerequisite for working through examples.
-Another option would be to develop an approach to the language by motivating language features through the examples themselves, but that would probably be a lot more work.
+### configuration language
+
+- syntax
+- functions
+- attribute sets
+- debugging
+- library
+- tool support
+  - syntax highlighting
+  - linters
+  - formatters
 
 ### maintain package collection
 

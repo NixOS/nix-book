@@ -48,7 +48,7 @@ flowchart
 	subgraph book[The Nix Book]
 		direction TB
 		build --> imperative-pkgs & declarative-pkgs
-		declarative-pkgs --> declarative-config & dev & nixpkgs-learn
+		declarative-pkgs --> writing --> declarative-config & dev & nixpkgs-learn
 		subgraph build[run software]
 			direction LR
 			find-pkg[find packages]
@@ -70,7 +70,7 @@ flowchart
 			pin-deps[pin dependencies]
 			gc[garbage collection]
 		end
-		subgraph nixpkgs-learn[Nix package collection]
+		subgraph nixpkgs-learn[package collection]
 			direction LR
 			modify[modify existing package]
 			newpkg[create new package]
@@ -81,6 +81,14 @@ flowchart
 			user-env[user environments]
 			os[operating system distribution]
 			services[service management]
+		end
+		subgraph writing[configuration language]
+			syntax
+			functions
+			attrsets[attribute sets]
+			debugging
+			library
+			tools[tool support]
 		end
 		subgraph dev[software development]
 			direction LR
