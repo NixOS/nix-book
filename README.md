@@ -60,8 +60,8 @@ flowchart
 	  subgraph front-page[front page]
 			subgraph core[core features]
 				same[always working environment, everywhere]
-				polyglot[any language]
-				deploy[build, configure, deploy]
+				polyglot[many programming languages]
+				deploy[configure, build, deploy]
 				rollbacks[roll back any time]
 				community[global community]
 			end
@@ -74,6 +74,7 @@ flowchart
 			correct[correct deployment]
 			multiple[multiple versions]
 			atomic[atomic upgrades]
+			agnostic[many programming languages]
 			caching[transparent caching]
 			remote[remote builds]
 			nixpkgs[community package collection]
