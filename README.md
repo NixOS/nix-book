@@ -4,6 +4,8 @@ This community online learning resource — not a book in the conventional sense
 
 It shall offer a centralized autodidactic onboarding path into Nix and its surrounding ecosystem.
 
+**Note**: The project title is tentative, do not take it too seriously. It may change in the future.
+
 ## A vision for the journey into Nix, `nixpkgs`, and NixOS
 
 This book is supposed to fit between first impressions on the [Nix web site][nixos-org] and the reference manuals for [Nix][nix-manual], [Nixpkgs][nixpkgs-manual], [NixOS][nixos-manual].
