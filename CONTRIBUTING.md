@@ -1,4 +1,4 @@
-# Contributing to this project
+# Contributing to Nix documentation
 
 The Nix Book is a community effort to collect, create, and maintain world-class learning resources for Nix.
 
@@ -102,6 +102,129 @@ Use this leverage with care.
 [github-mermaid]: https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
 
 ## Guides
+
+### How to contribute effectively?
+
+Different audiences require different levels of sophistication, and both readers' and contributors' available time and expertise varies widely.
+
+The following diagram shows a pipeline for contributions to learning material and documentation.
+Use it to decide where to best put the results of your efforts, depending on how much time you can spend on refining them to get accepted.
+
+Arrows point towards
+- decreasing rate of change
+- increasing public visibility
+- increasing amount of scrutiny.
+
+Arrows indicate possibilities to promote existing material to more prominent and more easily discoverable locations.
+
+```mermaid
+flowchart
+  Matrix --> |filter| Discourse
+  events[meetings and events] --> |report| Discourse
+  external[external sources] --> |collect| Discourse
+	Discourse --> |design| RFCs
+  Discourse --> |change| code
+  Discourse --> |learn| Wiki
+	Wiki --> |refine| manuals --> |guide| book[The Nix Book] --> |show| www[web site]
+	RFCs --> code --> |document| manuals
+```
+
+- Matrix
+
+  Use Matrix for casual communication.
+
+  The documentation team frequents the [Nix\* Documentation] room.
+
+  Old messages are extremely improbable to be read by anyone.
+  Feel free to post what you have found valuable on [Discourse][discourse].
+
+- meetings and events
+
+  Check the [Discourse community calendar][calendar] for real-time events.
+
+  The documentation team holds regular meetings and posts meeting notes in the [Documentation][docs] category.
+
+- external sources
+
+  The Internet is full of helpful resources concerning Nix.
+  Feel free to share what you have found valuable on Discourse in the [Links][links] category.
+
+- Discourse
+
+  [Discourse][discourse] is the central community hub.
+  This is the place for your questions, suggestions, and discussion.
+
+  The documentation team monitors the [Documentation][docs] category.
+
+  Old threads and especially posts in long threads are improbable to be read by many people.
+  Feel free to write down what you have learned in a [NixOS Wiki][wiki] article, or update an existing article.
+
+- Wiki
+
+  [NixOS Wiki][wiki] is a collection of interlinked guides to solve well-known problems.
+  It is collectively edited by the community.
+
+  The Wiki is a dumping ground for Nix knowledge.
+  Its purpose is to quickly and conveniently collect insights and make them readily available when needed.
+  It covers a broad range of topics, is only loosely organized, and does not impose quality standards.
+
+  The documentation team monitors changes to maintain an overview of topics of interest and prevent vandalism.
+
+  You can help with
+  - improving discoverability by adding categorization.
+  - clarifying articles and correcting errors
+  - migrating information to other resources.
+
+  Guidelines for migration:
+  - Nix interaction: [Nix manual][nix-manual]
+  - Language-specific build instructions: [Nixpkgs manual][nixpkgs-manual]
+  - Package, service, or hardware configuration: [NixOS manual][nixos-manual]
+  - Ecosystem overview and best practices: [The Nix Book][book]
+
+- manuals
+
+  The manuals for
+  - [Nix][nix-manual]
+  - [Nixpkgs][nixpkgs-manual]
+  - [NixOS][nixos-manual]
+
+  are primarily reference documentation, specifying interfaces and behavior.
+  They also show example interactions to show how to use its components, and explain mechanisms where necessary.
+
+  The documentation team assists contributors to get their changes to the manuals merged.
+
+- The Nix Book
+
+  The book's purpose is to guide newcomers by teaching essential Nix knowledge, show best practices, and help orient users in the Nix ecosystem.
+  It goes into breadth, not depth.
+
+  The documentation team maintains The Nix Book as editors.
+
+- web site
+
+  The Nix project web site is [nixos.org][www].
+  Web site contents that concern learning Nix should reference or include material from The Nix Book.
+
+  The [Nix markting team][marketing] is responsible for the web site, and the documentation team assists with maintaining contents related to onboarding.
+
+[matrix]: https://app.element.io/#/room/#docs:nixos.org
+[calendar]: https://discourse.nixos.org/t/community-calendar/18589
+[discourse]: https://discourse.nixos.org/
+[wiki]: https://nixos.wiki/
+[howto]: https://discourse.nixos.org/c/howto/15
+[docs]: https://discourse.nixos.org/c/dev/documentation/25
+[links]: https://discourse.nixos.org/c/links/12
+[nix]: https://github.com/NixOS/nix
+[nixpkgs]: https://github.com/NixOS/nixpkgs
+[book]: https://github.com/NixOS/nix-book
+[marketing]: https://nixos.org/community/teams/marketing.html
+[www]: https://nixos.org
+
+### How to help immediately?
+
+  You can always help out by
+  - converting [Howto] posts can be to Wiki pages.
+    Add a link from the thread to the page to guide readers.
 
 ### File organization
 
