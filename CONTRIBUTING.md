@@ -35,6 +35,59 @@ How could we improve it?
 Is there a popular application of Nix' capabilities not yet covered?
 We would be glad to incorporate your insights.
 
+# Documentation team
+
+## Motivation
+
+To improve the state of affairs with Nix onboarding and documentation, we have to tackle some big issues and work through many small ones:
+implement structural changes after gathering the necessary social support;
+fix numerous little problems and help people get their contributions merged.
+
+It requires significant time or resources to do this effectively and consistently.
+The team is built around that limitation, and therefore organized as a praxicracy:
+you are in charge if and only if you get the work done.
+
+The team’s reason to exist is to make that principle discoverable and reproducible by laying groundwork and setting examples.
+
+## Goals
+
+- ease Nix learning, increase onboarding success and user retention
+- improve organization of Nix knowledge
+- lead, guide, and support community efforts
+
+## Members
+
+- Valentin Gagarin (@fricklerhandwerk) (lead until 2022-10-31)
+
+    Nix documentarian, [Tweag](tweag.io)
+
+- Jörg Thalheim (@Mic92)
+
+    NixOS Wiki maintainer
+
+- Domen Kožar (@domenkozar)
+
+    [nix.dev](http://nix.dev) author, [Cachix](cachix.org)
+
+## Meeting protocol
+
+The team holds bi-weekly meetings on Thursdays 17:30 (Europe/Berlin).
+Meetings are announced on the [Discourse community calendar](https://discourse.nixos.org/t/community-calendar/18589).
+
+Meeting agendas are set on [the team's GitHub project board](https://github.com/orgs/NixOS/projects/15) from issues and pull requests.
+Pull requests have priority, and authors are invited to the meetings.
+Estimated discussion time is annotated for each agenda item and is expected to be followed.
+
+Each meeting begins with determining a scribe to take notes, and a moderator to keep focus and schedule.
+Notes are prepared in a [HackMD](https://hackmd.io/) scratchpad, and added to the respective issue or pull request as a comment.
+
+All notes are posted on the [Discourse documentation team category](https://discourse.nixos.org/c/governance/documentation-team/43).
+
+Notes should contain:
+- date of meeting
+- list of attendees
+- links to GitHub comments from agenda items
+
 # Guidelines
 
 Here are values and practical guidelines to go by when contributing.
