@@ -110,6 +110,14 @@ Different audiences require different levels of sophistication, and both readers
 The following diagram shows a pipeline for contributions to learning material and documentation.
 Use it to decide where to best put the results of your efforts, depending on how much time you can spend on refining them to get accepted.
 
+Communication platforms are distinguished by mode of interaction:
+- append to streams
+  - amount of infomation grows without bounds
+  - only recent items are relevant
+- change artifacts
+  - amount of information is strictly bounded
+  - all items are relevant
+
 Arrows point towards
 - decreasing rate of change
 - increasing public visibility
@@ -127,6 +135,20 @@ flowchart
   Discourse --> |learn| Wiki
 	Wiki --> |refine| manuals --> |guide| book[The Nix Book] --> |show| www[web site]
 	RFCs --> code --> |document| manuals
+  subgraph stream
+    Matrix
+		events
+		external
+		Discourse
+		RFCs
+  end
+  subgraph artifact
+		Wiki
+		code
+		manuals
+		book
+		www
+  end
 ```
 
 - Matrix
