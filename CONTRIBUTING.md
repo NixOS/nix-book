@@ -208,7 +208,7 @@ flowchart
 
   Use Matrix for casual communication.
 
-  The documentation team frequents the [Nix\* Documentation] room.
+  The documentation team frequents the [Nix\* Documentation][matrix] room.
 
   Old messages are extremely improbable to be read by anyone.
   Feel free to post what you have found valuable on [Discourse][discourse].
