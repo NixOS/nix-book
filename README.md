@@ -1,10 +1,13 @@
 # The Nix Book
 
-This community online learning resource — not a book in the conventional sense — is under development.
+> **Warning**
+> This repository may eventually disappear.
+>
+> The [Nix documentation team][docs-team] now works on [nix.dev][nix-dev] towards the vision outlined here.
 
-It shall offer a centralized autodidactic onboarding path into Nix and its surrounding ecosystem.
+[docs-team]: https://discourse.nixos.org/t/documentation-team-flattening-the-learning-curve/20003
+[nix-dev]: https://github.com/NixOS/nix.dev
 
-**Note**: The project title is tentative, do not take it too seriously. It may change in the future.
 
 ## A vision for the journey into Nix, `nixpkgs`, and NixOS
 
