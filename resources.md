@@ -67,6 +67,7 @@ Nix language
 
 Nixpkgs
 - [Nix Pills, partial](https://nixos.org/guides/nix-pills/index.html)
+- [Connecting Bash to Nix](https://www.zombiezen.com/blog/2023/03/connecting-bash-to-nix/)
 
 NixOS
 
